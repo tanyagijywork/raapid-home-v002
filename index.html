@@ -47,11 +47,11 @@ h3{font-weight:500;font-size:1.25rem;line-height:1.4}
 .util .wrap{position:relative;display:flex;justify-content:space-between;align-items:flex-end;gap:28px;height:51px;padding-bottom:2px}
 .util a{font-size:.8125rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:rgba(246,244,244,.65);padding:0 0 3px;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .util a:hover,.util a:focus-visible{color:var(--white);border-bottom-color:var(--green)}
-.u-links{display:flex;gap:28px;align-items:flex-end}
+.u-links{display:flex;gap:28px;align-items:flex-end;margin-left:auto}
 .util a.u-phi{display:inline-flex;align-items:center;gap:8px}
 .u-i{flex:none;display:block;margin-top:-1px}
 
-@media(max-width:560px){.u-links a:nth-child(-n+2){display:none}.util .wrap{gap:12px}}
+@media(max-width:560px){.u-links a:nth-child(1){display:none}.util .wrap{gap:12px}}
 header.site{position:sticky;top:0;z-index:20;background:transparent;color:var(--white);border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
 header.site.scrolled{background:rgba(1,1,1,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom-color:rgba(246,244,244,.14)}
 header.site>.wrap{display:flex;align-items:center;gap:24px;height:76px}
@@ -426,6 +426,8 @@ footer .wrap{align-items:flex-start}
 .pb-pop ul{list-style:none;margin:0;padding:0}
 .pb-pop li{padding:12px 0;border-top:1px solid var(--n20);display:grid;gap:2px}
 .pb-pop li b{font-weight:500;font-size:1rem}
+.pb-pop{--btf:var(--indigo);--bta:var(--violet)}
+.pb-pop .pb-tc{justify-self:start;margin-top:6px;padding:2px 0;font-size:.875rem;gap:6px}
 .pb-pop li span{font-size:.875rem;line-height:1.45;color:var(--n60)}
 .pb-x{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;border:1px solid rgba(33,21,74,.3);background:transparent;color:var(--indigo);font-size:1.25rem;line-height:1;cursor:pointer}
 .pb-x:hover{background:rgba(33,21,74,.08)}
@@ -495,7 +497,7 @@ footer .wrap{align-items:flex-start}
 </svg>
 
 <nav class="util" aria-label="Secondary">
-  <div class="wrap"><a class="u-phi" href="#"><svg class="u-i" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M12 10.8v5.6"/><circle cx="12" cy="7.7" r=".6" fill="currentColor"/></svg><span>See how we protect your PHI</span></a><span class="u-links"><a href="#">Press Room</a><a href="#" id="offices-link">Offices</a><a href="#">Career</a><a href="#contact">Contact</a></span></div>
+  <div class="wrap"><span class="u-links"><a href="#">News</a><a href="#">Customer Login</a><a href="#contact">Contact</a></span></div>
 </nav>
 
 <header class="site dark">
@@ -526,11 +528,11 @@ footer .wrap{align-items:flex-start}
       <div class="ml"><a class="mt" href="#">INSIGHTS</a></div>
       <div class="ml"><a class="mt" href="#labs">RAAPID LABS</a></div>
       <div class="mi">
-        <button class="mt" aria-expanded="false" aria-controls="mega3">ABOUT US<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></button>
+        <button class="mt" aria-expanded="false" aria-controls="mega3">ABOUT<svg viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m2 4 4 4 4-4"/></svg></button>
         <div class="mega" id="mega3"><div class="mp">
           <div class="mf"><span class="mf-tag">Latest News</span><img src="menu-latest-news.jpg" alt="" width="640" height="300" loading="lazy"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</h4><a class="bs bs-t" href="#">Know More<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
           <div class="mdiv" aria-hidden="true"></div>
-          <div class="mlist"><p class="mh">ABOUT US</p><ul><li><a href="#"><span class="mic"><img src="m-ab-story.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Our Story</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#"><span class="mic"><img src="m-ab-lead.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Leadership</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#"><span class="mic"><img src="m-ab-partners.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Our Partners and Sponsors</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#contact"><span class="mic"><img src="m-ab-demo.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Schedule a demo</span><span class="mar" aria-hidden="true">→</span></a></li></ul></div>
+          <div class="mlist"><p class="mh">ABOUT</p><ul><li><a href="#"><span class="mic"><img src="m-ab-story.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Our Story</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#"><span class="mic"><img src="m-ab-lead.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Leadership</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#"><span class="mic"><img src="m-ab-partners.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Partners and Security</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#contact"><span class="mic"><img src="m-ab-demo.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Request a demo</span><span class="mar" aria-hidden="true">→</span></a></li><li><a href="#"><span class="mic"><img src="m-ab-lead.png" alt="" width="44" height="44" loading="lazy"></span><span class="mtx">Careers</span><span class="mar" aria-hidden="true">→</span></a></li></ul></div>
         </div></div>
       </div>
     </nav>
@@ -613,7 +615,7 @@ footer .wrap{align-items:flex-start}
         <span class="pb-ln pb-ln2" data-k="2" aria-hidden="true"></span>
       </div>
       <div class="pb-pop pb-pl" id="pop-left" data-pop="left" role="dialog" aria-labelledby="pb-lt" hidden><button class="pb-x" type="button" aria-label="Close">&times;</button><h3 id="pb-lt">Where your teams use it</h3><ul><li><b>Risk adjustment</b><span>Retrospective. Prospective. RADV</span></li><li><b>Medical coding</b><span>Inpatient. Outpatient</span></li><li><b>Clinical documentation improvement</b><span>Accuracy and completeness</span></li><li><b>Payment integrity</b><span>Pre-payment validation</span></li></ul></div>
-      <div class="pb-pop pb-pr" id="pop-right" data-pop="right" role="dialog" aria-labelledby="pb-rt" hidden><button class="pb-x" type="button" aria-label="Close">&times;</button><h3 id="pb-rt">Built for scale and scrutiny</h3><ul><li><b>Security and compliance</b><span>HITRUST r2 • SOC 2 • HIPAA</span></li><li><b>Integration</b><span>EHR embedding • APIs • cloud-native</span></li><li><b>Analytics and reporting</b><span>Program and enterprise performance</span></li><li><b>Enterprise ready</b><span>Single-tenant • No training on your data</span></li></ul></div>
+      <div class="pb-pop pb-pr" id="pop-right" data-pop="right" role="dialog" aria-labelledby="pb-rt" hidden><button class="pb-x" type="button" aria-label="Close">&times;</button><h3 id="pb-rt">Built for scale and scrutiny</h3><ul><li><b>Security and compliance</b><span>HITRUST r2 • SOC 2 • HIPAA</span><a class="bs bs-t pb-tc" href="#">Know more<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></li><li><b>Integration</b><span>EHR embedding • APIs • cloud-native</span></li><li><b>Analytics and reporting</b><span>Program and enterprise performance</span></li><li><b>Enterprise ready</b><span>Single-tenant • No training on your data</span></li></ul></div>
       <div class="pb-cta"><a class="bs bs-p" href="#">Explore the platform<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </section>
@@ -704,8 +706,8 @@ footer .wrap{align-items:flex-start}
       <div><h4>HEALTH PLANS</h4><ul><li><a href="#">Retrospective Risk Adjustment</a></li><li><a href="#">RADV &amp; Audit Readiness</a></li><li><a href="#">Payment Integrity</a></li><li><a href="#">Medical Coding Services</a></li></ul></div>
       <div><h4>PROVIDERS &amp; HEALTH SYSTEMS</h4><ul><li><a href="#">Prospective Risk Adjustment</a></li><li><a href="#">Clinical Documentation Improvement</a></li><li><a href="#">Medical Coding</a></li><li><a href="#">Medical Coding Services</a></li></ul></div>
       <div><h4>PLATFORM</h4><ul><li><a href="#">RAAPID AIDE</a></li><li><a href="#">AI-as-a-Service</a></li></ul></div>
-      <div class="fl1"><h4><a href="#">INSIGHTS</a></h4><h4><a href="#labs">RAAPID LABS</a></h4></div>
-      <div><h4>ABOUT US</h4><ul><li><a href="#">Our Story</a></li><li><a href="#">Leadership</a></li><li><a href="#">Our Partners and Sponsors</a></li><li><a href="#contact">Schedule a demo</a></li></ul></div>
+      <div class="fl1"><h4><a href="#">INSIGHTS</a></h4><h4><a href="#labs">RAAPID LABS</a></h4><h4><a href="#">NEWS</a></h4><h4><a href="#">CUSTOMER LOGIN</a></h4><h4><a href="#contact">CONTACT</a></h4><h4><a href="#">OFFICES</a></h4></div>
+      <div><h4>ABOUT</h4><ul><li><a href="#">Our Story</a></li><li><a href="#">Leadership</a></li><li><a href="#">Partners and Security</a></li><li><a href="#">Careers</a></li><li><a href="#contact">Request a demo</a></li></ul></div>
     </nav>
   </div>
 
